@@ -102,39 +102,41 @@ sudo docker exec -it --user root jupyter bash
 
 
 ## Azure (future samples)
-- pip install azure-core
-- pip install azure-mgmt-compute
-- pip install azure-mgmt-containerservice
-- pip install azure-mgmt-containerinstance
-- pip install azure-storage-blob
-- pip install azure-keyvault
-- pip install azure-mgmt-storage
-- pip install azure.storage.blob
-- pip install azure-storage-file-share
-- pip install azure-storage-common
-- pip install azure-mgmt-datalake-store
-- pip install azure-mgmt-databricks
-- pip install azure-data-tables
-- pip install azure-mgmt-synapse
+        pip install azure-core
+        pip install azure-mgmt-compute
+        pip install azure-mgmt-containerservice
+        pip install azure-mgmt-containerinstance
+        pip install azure-storage-blob
+        pip install azure-keyvault
+        pip install azure-mgmt-storage
+        pip install azure.storage.blob
+        pip install azure-storage-file-share
+        pip install azure-storage-common
+        pip install azure-mgmt-datalake-store
+        pip install azure-mgmt-databricks
+        pip install azure-data-tables
+        pip install azure-mgmt-synapse
+        pip install azure-mgmt-monitor
+
 
 
 ## Misc 
-- pip install imageio
-- pip install prophet
+        pip install imageio
+        pip install prophet
 
 ## SQL / Hana / pandas
-- pip install sqlalchemy
-- pip install pyodbc 
-- pip install pandas
-- pip install pyarrow
-- pip install sqlalchemy-hana
-- pip install hdbcli
+        pip install sqlalchemy
+        pip install pyodbc 
+        pip install pandas
+        pip install pyarrow
+        pip install sqlalchemy-hana
+        pip install hdbcli
 
 ## Spark (future samples)
-- pip install pyspark
-- pip install ipython-sql
-- pip install sparksql-magic
-- pip install delta-spark
+        pip install pyspark
+        pip install ipython-sql
+        pip install sparksql-magic
+        pip install delta-spark
 
 
 ----------------------------------------------------------------------------------------
