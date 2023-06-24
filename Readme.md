@@ -16,11 +16,11 @@
 
 ### Jupyter with Python
     
-- docker run -p 8888:8888 --name jupyter -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook
+        docker run -p 8888:8888 --name jupyter -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook
 
 ### SQL Server
 
-docker run --name mssql2022 -v "${PWD}":/tmp -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=M1dNigt3ss" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+        docker run --name mssql2022 -v "${PWD}":/tmp -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=M1dNigt3ss" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 
 SQL Server SA user pass:   M1dNigt3ss   -- Remember this
 
@@ -36,7 +36,9 @@ SQL Server SA user pass:   M1dNigt3ss   -- Remember this
 
     ![image](https://github.com/Israelsmmx/PandasReferenceSamples/assets/84999244/0eb84ccf-0fee-47ad-a5e8-be7a86cd3e38)
     
-* Check the container ID in docker ps  
+* Check the container ID in
+
+          docker ps  
 
     krump@KrumbaRumba:~/code/$ **docker ps**
     CONTAINER ID   IMAGE                                        COMMAND                  CREATED        STATUS                    PORTS                    NAMES
@@ -48,14 +50,14 @@ SQL Server SA user pass:   M1dNigt3ss   -- Remember this
     
 * Copy the AdventureWorks .bak file to the container
 
-  **docker cp AdventureWorksDW2022.bak 17c83a1327c9:/tmp**
+          docker cp AdventureWorksDW2022.bak 17c83a1327c9:/tmp
   
 * Use SQL Server client list MSSQL Studio or Azure Data Explorer to restore AdventureWorksDW2022 from .BAK File located on /tmp/AdventureWorksDW2022.bak
 
 ### Preparatives for Jupyter Container to install SQL SERVER ODBC Libraries 
 
 
-sudo docker exec -it --user root jupyter bash
+            sudo docker exec -it --user root jupyter bash
 
 #### in jupyter container as root run the next code (looks to many lines I'm not expert but this install ODBC Client 18) & sync the dependencies locally
         
