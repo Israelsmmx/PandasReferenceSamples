@@ -24,6 +24,8 @@ docker run --name mssql2022 -v "${PWD}":/tmp -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PAS
 
 SQL Server SA user pass:   M1dNigt3ss   -- Remember this
 
+![image](https://github.com/Israelsmmx/PandasReferenceSamples/assets/84999244/6b307258-6be5-483d-8c6f-19d23d6ec7e0)
+
 -------------------------------------------------------------------------------------
 
 ### Preparatives for SQL SErver after startup
@@ -32,12 +34,17 @@ SQL Server SA user pass:   M1dNigt3ss   -- Remember this
 
     <https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
 
+    ![image](https://github.com/Israelsmmx/PandasReferenceSamples/assets/84999244/0eb84ccf-0fee-47ad-a5e8-be7a86cd3e38)
+    
 * Check the container ID in docker ps  
 
     krump@KrumbaRumba:~/code/$ **docker ps**
     CONTAINER ID   IMAGE                                        COMMAND                  CREATED        STATUS                    PORTS                    NAMES
     9fba1dd731fd   jupyter/datascience-notebook                 "tini -g -- start-no…"   18 hours ago   Up 23 minutes (healthy)   0.0.0.0:8888->8888/tcp   jupyter
     **17c83a1327c9**   mcr.microsoft.com/mssql/server:2022-latest   "/opt/mssql/bin/perm…"   18 hours ago   Up 23 minutes             0.0.0.0:1433->1433/tcp   mssql2022
+
+    
+
     
 * Copy the AdventureWorks .bak file to the container
 
