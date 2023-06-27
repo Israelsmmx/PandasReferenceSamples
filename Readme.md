@@ -126,6 +126,12 @@ SQL Server SA user pass:   M1dNigt3ss   -- Remember this
         pip install imageio
         pip install prophet
 
+
+        pip install xgboost
+        pip install matplotlib
+        pip install seaborn
+        pip install sklearn
+
 ## SQL / Hana / pandas
         pip install sqlalchemy
         pip install pyodbc 
